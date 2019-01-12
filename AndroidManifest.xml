@@ -1,0 +1,54 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qiyi.tv.tw.nexgen"
+    android:versionCode="2"
+    android:versionName="2.01" >
+   <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="22" />
+     <uses-permission android:name="android.permission.INTERNET"/> 
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/> 
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.mstar.android.permissionn.ACCESS_TV_DATA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <application
+        android:name="com.ktc.launcher.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:hardwareAccelerated="@bool/config_hardwareAccelerated"
+        android:largeHeap="@bool/config_largeHeap"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.ktc.launcher.LauncherActivity"
+            android:label="@string/app_name"
+             android:clearTaskOnLaunch="true"
+            android:configChanges="locale|layoutDirection|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:stateNotNeeded="true"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.MONKEY" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ktc.launcher.SlectAppListActivity"
+            android:theme="@style/Translucent" >
+        </activity>
+        <activity android:name="com.ktc.launcher.AllAppListActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+    </application>
+
+</manifest>

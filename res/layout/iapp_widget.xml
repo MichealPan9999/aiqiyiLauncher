@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/app_widget"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- 第一排 1-5 -->
+    <!-- 1 X-sign -->
+
+    <LinearLayout
+        android:id="@+id/app_widget_1"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:addStatesFromChildren="true"
+        android:background="@drawable/iapp_widget_layout"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/app_widget_1_ic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal" 
+            android:src="@drawable/ic_tv"/>
+
+        <com.ktc.launcher.ui.MarqueeTextView
+            android:id="@+id/app_widget_1_name"
+            android:layout_width="98dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="1dp"
+            android:gravity="center_horizontal"
+			android:marqueeRepeatLimit="marquee_forever"
+			android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="@string/tv"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/iapp_appname_size" />
+    </LinearLayout>
+
+    <!-- 2 multimedia -->
+
+    <LinearLayout
+        android:id="@+id/app_widget_2"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_alignTop="@+id/app_widget_1"
+        android:layout_toRightOf="@+id/app_widget_1"
+        android:addStatesFromChildren="true"
+        android:background="@drawable/iapp_widget_layout"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/app_widget_2_ic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal|center_vertical" 
+            android:src="@drawable/ic_multimedia"/>
+
+        <com.ktc.launcher.ui.MarqueeTextView
+            android:id="@+id/app_widget_2_name"
+            android:layout_width="98dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="1dp"
+            android:gravity="center_horizontal"
+			android:marqueeRepeatLimit="marquee_forever"
+			android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="@string/multimedia"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/iapp_appname_size" />
+    </LinearLayout>
+
+    <!-- 3 browser -->
+
+    <LinearLayout
+        android:id="@+id/app_widget_3"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_alignTop="@+id/app_widget_2"
+        android:layout_toRightOf="@+id/app_widget_2"
+        android:addStatesFromChildren="true"
+        android:background="@drawable/iapp_widget_layout"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/app_widget_3_ic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center" 
+            android:src="@drawable/ic_browser"/>
+
+        <com.ktc.launcher.ui.MarqueeTextView
+            android:id="@+id/app_widget_3_name"
+            android:layout_width="98dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="1dp"
+            android:gravity="center_horizontal"
+			android:marqueeRepeatLimit="marquee_forever"
+			android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="@string/brower"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/iapp_appname_size" />
+    </LinearLayout>
+
+    <!-- 4 easiFinder -->
+
+    <LinearLayout
+        android:id="@+id/app_widget_4"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_alignTop="@+id/app_widget_3"
+        android:layout_toRightOf="@+id/app_widget_3"
+        android:addStatesFromChildren="true"
+        android:background="@drawable/iapp_widget_layout"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/app_widget_4_ic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal" 
+            android:src="@drawable/ic_settings"/>
+
+        <com.ktc.launcher.ui.MarqueeTextView
+            android:id="@+id/app_widget_4_name"
+            android:layout_width="98dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="1dp"
+            android:gravity="center_horizontal"
+			android:marqueeRepeatLimit="marquee_forever"
+			android:ellipsize="marquee"
+			android:singleLine="true"
+            android:text="@string/settings"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/iapp_appname_size" />
+    </LinearLayout>
+
+    <!-- 5 setting -->
+
+    <LinearLayout
+        android:id="@+id/app_widget_5"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_alignTop="@+id/app_widget_4"
+        android:layout_toRightOf="@+id/app_widget_4"
+        android:addStatesFromChildren="true"
+        android:background="@drawable/iapp_widget_layout"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/app_widget_5_ic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal" />
+
+        <com.ktc.launcher.ui.MarqueeTextView
+            android:id="@+id/app_widget_5_name"
+            android:layout_width="98dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="1dp"
+            android:ellipsize="marquee"
+            android:gravity="center_horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/iapp_appname_size" />
+    </LinearLayout>
+
+    <!-- 第二排 6-10 -->
+    <!-- 6 wps office -->
+
+    <LinearLayout
+        android:id="@+id/app_widget_6"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_alignLeft="@+id/app_widget_1"
+        android:layout_below="@+id/app_widget_1"
+        android:layout_marginTop="40dp"
+        android:addStatesFromChildren="true"
+        android:background="@drawable/iapp_widget_layout"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/app_widget_6_ic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal" />
+
+        <com.ktc.launcher.ui.MarqueeTextView
+            android:id="@+id/app_widget_6_name"
+            android:layout_width="98dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="1dp"
+            android:ellipsize="marquee"
+            android:gravity="center_horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/iapp_appname_size" />
+    </LinearLayout>
+
+    <!-- 7 -->
+
+    <LinearLayout
+        android:id="@+id/app_widget_7"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_alignLeft="@+id/app_widget_2"
+        android:layout_alignTop="@+id/app_widget_6"
+        android:layout_below="@+id/app_widget_2"
+        android:addStatesFromChildren="true"
+        android:background="@drawable/iapp_widget_layout"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/app_widget_7_ic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal" />
+
+        <com.ktc.launcher.ui.MarqueeTextView
+            android:id="@+id/app_widget_7_name"
+            android:layout_width="98dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="1dp"
+            android:ellipsize="marquee"
+            android:gravity="center_horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/iapp_appname_size" />
+    </LinearLayout>
+
+    <!-- 8 -->
+
+    <LinearLayout
+        android:id="@+id/app_widget_8"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_alignLeft="@+id/app_widget_3"
+        android:layout_alignTop="@+id/app_widget_7"
+        android:layout_below="@+id/app_widget_3"
+        android:addStatesFromChildren="true"
+        android:background="@drawable/iapp_widget_layout"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/app_widget_8_ic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal" />
+
+        <com.ktc.launcher.ui.MarqueeTextView
+            android:id="@+id/app_widget_8_name"
+            android:layout_width="98dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="1dp"
+            android:ellipsize="marquee"
+            android:gravity="center_horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/iapp_appname_size" />
+    </LinearLayout>
+
+    <!-- 9 -->
+
+    <LinearLayout
+        android:id="@+id/app_widget_9"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_alignLeft="@+id/app_widget_4"
+        android:layout_alignTop="@+id/app_widget_7"
+        android:layout_below="@+id/app_widget_4"
+        android:addStatesFromChildren="true"
+        android:background="@drawable/iapp_widget_layout"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/app_widget_9_ic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal" />
+
+        <com.ktc.launcher.ui.MarqueeTextView
+            android:id="@+id/app_widget_9_name"
+            android:layout_width="98dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="1dp"
+            android:ellipsize="marquee"
+            android:gravity="center_horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/iapp_appname_size" />
+    </LinearLayout>
+
+    <!-- 10 all app center -->
+
+    <LinearLayout
+        android:id="@+id/app_widget_appcenter"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_alignLeft="@+id/app_widget_5"
+        android:layout_alignTop="@+id/app_widget_9"
+        android:layout_below="@+id/app_widget_5"
+        android:addStatesFromChildren="true"
+        android:background="@drawable/iapp_widget_layout"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/app_widget_appcenter_ic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/all_apps" />
+
+        <com.ktc.launcher.ui.MarqueeTextView
+            android:id="@+id/app_widget_appcenter_name"
+            android:layout_width="98dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="1dp"
+	    android:ellipsize="marquee"
+            android:gravity="center_horizontal"
+	    android:marqueeRepeatLimit="marquee_forever"
+	    android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/iapp_appname_size" />
+    </LinearLayout>
+
+</RelativeLayout>

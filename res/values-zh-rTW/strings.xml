@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">KLauncher</string>
+    <string name="action_settings">設定</string>
+	<string name="source">信源</string>
+	<string name="application_manager">應用管理器</string>
+	<string name="application_center">應用程式</string>
+	<string name="brower">瀏覽器</string>
+	<string name="calendar">行事曆</string>
+	<string name="email">電子郵件</string>
+	<string name="apkinstall">APK安裝</string>
+	<string name="multimedia">多媒體</string>
+	<string name="settings">設定</string>
+	<string name="tv">離開首頁</string>
+	<string name="replace">更換</string>
+	<string name="delete">清除</string>
+	<string name="cancel">取消</string>
+	<string name="back">返回</string>
+	<string name="hint">系統儲備</string>
+	<string name="check_update">檢查更新</string>
+    <string name="new_version_text">發現新版本，是否更新?</string>
+    <string name="skip_this_version">跳過</string>
+    <string name="ok">確定</string>
+    <string name="update">更新</string>
+    <string name="checking_version">正在獲取最新版本信息...</string>
+    <string name="latest_version">您的軟件已是最新版本！</string>
+    <string name="get_version_failed">無法獲得版本信息！</string>
+    <string name="downloading_package">正在下載安裝包...</string>
+    <string name="download_install">下載並安裝</string>
+    <string name="download_failed">下載失敗！</string>
+    <string name="def_date">1月1日\n星期一</string>
+    <string name="time_am">上午</string>
+    <string name="time_pm">下午</string>
+
+    <string-array name="week">
+        <item>星期日</item>
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+    </string-array>
+	<string-array name="month">
+        <item>1月</item>
+        <item>2月</item>
+        <item>3月</item>
+        <item>4月</item>
+        <item>5月</item>
+        <item>6月</item>
+        <item>7月</item>
+	<item>8月</item>
+        <item>9月</item>
+        <item>10月</item>
+        <item>11月</item>
+        <item>12月</item>
+    </string-array>
+</resources>
